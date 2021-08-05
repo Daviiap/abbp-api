@@ -1,14 +1,19 @@
 {
-  "name": "api",
+  "name": "abbp-api",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "eslint": "^7.32.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2"
   },
   "scripts": {
     "dev": "nodemon src/index.js",

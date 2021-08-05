@@ -1,25 +1,17 @@
-const express = require('express');
+require('dotenv').config();
 const { json } = require('express');
 const cors = require('cors');
-const app = express();
+
+const app = require('./app');
+const routes = require('./routes');
 
 app.use(json());
 app.use(cors({
-  origin: 'http://localhost:5500'
+  origin: 'http://localhost:5500',
 }));
+app.use(routes);
 
-app.get('/', (_, res) => {
-  return res.json({ hello: 'world' });
-});
-
-app.post('/subscription', (req, res) => {
-  const { body } = req;
-
-  console.log(body);
-
-  return res.json({ status: 'received!' });
-});
-
-app.listen(3000, () => {
-  console.log('SERVER RUNNING!');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
