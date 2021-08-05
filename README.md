@@ -6,7 +6,7 @@ O intuito desse projeto é criar um template de um site para a associação
 
 É um site simples, sem muita enrolação.
 
-## `Rodando o projeto`
+### `Rodando o projeto`
 
 Tem o `npm` e/ou `yarn` instalado? Pois bem, já pode rodar o projeto!
 
