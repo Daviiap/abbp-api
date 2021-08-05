@@ -1,8 +1,10 @@
+const submitService = require('../services/subscription/submit');
+
 const controller = {
   submit: (req, res) => {
     const { body } = req;
 
-    console.log(body);
+    submitService(body);
 
     return res.json({ status: 'received!' });
   },
