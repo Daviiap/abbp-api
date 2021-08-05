@@ -12,7 +12,6 @@
   },
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js",
-    "commit": "bash commit.sh"
+    "start": "node src/index.js"
   }
 }
